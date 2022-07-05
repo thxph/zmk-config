@@ -168,9 +168,9 @@ ESCLCTL    &kp A      &kp S      &kp D      &kp F      &kp G      /*|*/ &kp H   
                           &mo L2 &mo L1 &trans /*|*/ &trans &mo R1 &mo R2 >; };
 
                 l1r1r2_layer { bindings = <
-xbt_n rgb_tg &trans &trans &trans &trans  /*|*/  pwr_tg     rgb_sv rgb_bn rgb_sn rgb_hn rgb_en
-xbt_p df_b0  df_b1  &trans &trans &trans  /*|*/  pwr_on     pwr_sv rgb_bp rgb_sp rgb_hp rgb_ep
-out_b xbt_s0 xbt_s1 xbt_s2 xbt_s3 xbt_s4  /*|*/  pwr_off    rgb_tg &trans &trans &trans &trans
+xbt_n rgb_tg pwr_tg &trans &trans &trans  /*|*/  rgb_sv     pwr_on  rgb_bn rgb_sn rgb_hn rgb_en
+xbt_p df_b0  df_b1  &trans &trans &trans  /*|*/  pwr_sv     pwr_off rgb_bp rgb_sp rgb_hp rgb_ep
+out_b xbt_s0 xbt_s1 xbt_s2 xbt_s3 xbt_s4  /*|*/  &trans     &trans  &trans &trans &trans &trans
                             &mo L2 &mo L1 xbt_clr /*|*/ out_u  &mo R1     &mo R2 >; };
         };
 };
