@@ -16,54 +16,53 @@
 keymap {
 compatible = "zmk,keymap";
 default_layer { bindings = <
-                            TABLALT    &kp Q      &kp W      &kp E      &kp R      &kp T               &kp Y      &kp U      &kp I      &kp O      &kp P      QUORALT
-                            ESCLCTL    &kp A      &kp S      &kp D      &kp F      &kp G               &kp H      &kp J      &kp K      &kp L      &kp SEMI   BSPCRCTL
-                            &kp LSHFT  ZLGUI      &kp X      &kp C      &kp V      &kp B               &kp N      &kp M      &kp COMMA  &kp DOT    SLHRGUI    &kp RSHFT
-                                                             &mo L2     &mo L1     &kp SPACE           &kp RET    &mo R1     &mo R2                                     >; };
-b1_layer { bindings = <
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
-                            ______     &kp Z      ______     ______     ______     ______              ______     ______     ______     ______     &kp FSLH   ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-l1_layer { bindings = <
-                            ______     &kp LALT   &kp N5     &kp N4     &kp N3     &caps_word          &kp PG_UP  &kp HOME   &kp END    &kp PG_DN  &kp INS    ______
-                            ______     &kp LCTRL  &kp N2     &kp N1     &kp N0     &kp N9              &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DEL    ______
-                            ______     &kp LGUI   &kp N8     &kp N7     &kp N6     ______              ______     ______     ______     ______     ______     ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-r1_layer { bindings = <
-                            ______     ______     &kp LT     &kp GRAVE  &kp GT     ______              &kp AT     &kp LBKT   &kp MINUS  &kp RBKT   ______     ______
-                            ______     &kp BSLH   &kp LBRC   &kp EQUAL  &kp RBRC   &kp HASH            &kp UNDER  &kp LPAR   &kp DQT    &kp RPAR   ______     ______
-                            ______     &kp PRCNT  &kp EXCL   &kp PLUS   &kp TILDE  &kp CARET           &kp AMPS   &kp STAR   &kp DLLR   &kp PIPE   ______     ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-l2_layer { bindings = <
-                            ______     ______     &kp F5     &kp F4     &kp F3     &kp F11             ______     ______     ______     ______     ______     ______
-                            ______     ______     &kp F2     &kp F1     &kp F10    &kp F9              ______     &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  ______
-                            ______     ______     &kp F8     &kp F7     &kp F6     &kp F12             ______     &kp RCTRL  &kp RALT   &kp RGUI   &kp RSHFT  ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-r2_layer { bindings = <
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
-                            ______     &kp LSHFT  &kp LGUI   &kp LALT   &kp LCTRL  ______              ______     &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  ______
-                            ______     &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL  ______              ______     &kp RCTRL  &kp RALT   &kp RGUI   &kp RSHFT  ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-l1r1_layer { bindings = <
-                            ______     ______     &kp F5     &kp F4     &kp F3     &kp F11             ______     ______     ______     ______     ______     ______
-                            ______     ______     &kp F2     &kp F1     &kp F10    &kp F9              ______     &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  ______
-                            ______     ______     &kp F8     &kp F7     &kp F6     &kp F12             ______     &kp RCTRL  &kp RALT   &kp RGUI   &kp RSHFT  ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-l1l2_layer { bindings = <
-                            btlder     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     btlder
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-r1r2_layer { bindings = <
-                            btlder     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     btlder
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
-                            ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     &kp FSLH   ______
-                                                             &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };
-l1r1r2_layer { bindings = <
-                            xbt_n      rgb_tg     pwr_tg     ______     ______     ______              rgb_sv     pwr_on     rgb_bn     rgb_sn     rgb_hn     rgb_en
-                            xbt_p      df_b0      df_b1      ______     ______     ______              pwr_sv     pwr_off    rgb_bp     rgb_sp     rgb_hp     rgb_ep
-                            out_b      xbt_s0     xbt_s1     xbt_s2     xbt_s3     xbt_s4              ______     ______     ______     ______     ______     ______
-                                                             &mo L2     &mo L1     xbt_clr             out_u      &mo R1     &mo R2                                     >; };
-        };
-};
+
+  TABLALT    &kp Q      &kp W      &kp E      &kp R      &kp T               &kp Y      &kp U      &kp I      &kp O      &kp P      QUORALT
+  ESCLCTL    &kp A      &kp S      &kp D      &kp F      &kp G               &kp H      &kp J      &kp K      &kp L      &kp SEMI   BSPCRCTL
+  &kp LSHFT  ZLGUI      &kp X      &kp C      &kp V      &kp B               &kp N      &kp M      &kp COMMA  &kp DOT    SLHRGUI    &kp RSHFT
+                                   &mo L2     &mo L1     &kp SPACE           &kp RET    &mo R1     &mo R2                                     >; };b1_layer { bindings = <
+
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
+  ______     &kp Z      ______     ______     ______     ______              ______     ______     ______     ______     &kp FSLH   ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };l1_layer { bindings = <
+
+  ______     &kp LALT   &kp N5     &kp N4     &kp N3     &caps_word          &kp PG_UP  &kp HOME   &kp END    &kp PG_DN  &kp INS    ______
+  ______     &kp LCTRL  &kp N2     &kp N1     &kp N0     &kp N9              &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DEL    ______
+  ______     &kp LGUI   &kp N8     &kp N7     &kp N6     ______              ______     ______     ______     ______     ______     ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };r1_layer { bindings = <
+
+  ______     ______     &kp LT     &kp GRAVE  &kp GT     ______              &kp AT     &kp LBKT   &kp MINUS  &kp RBKT   ______     ______
+  ______     &kp BSLH   &kp LBRC   &kp EQUAL  &kp RBRC   &kp HASH            &kp UNDER  &kp LPAR   &kp DQT    &kp RPAR   ______     ______
+  ______     &kp PRCNT  &kp EXCL   &kp PLUS   &kp TILDE  &kp CARET           &kp AMPS   &kp STAR   &kp DLLR   &kp PIPE   ______     ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };l2_layer { bindings = <
+
+  ______     ______     &kp F5     &kp F4     &kp F3     &kp F11             ______     ______     ______     ______     ______     ______
+  ______     ______     &kp F2     &kp F1     &kp F10    &kp F9              ______     &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  ______
+  ______     ______     &kp F8     &kp F7     &kp F6     &kp F12             ______     &kp RCTRL  &kp RALT   &kp RGUI   &kp RSHFT  ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };r2_layer { bindings = <
+
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
+  ______     &kp LSHFT  &kp LGUI   &kp LALT   &kp LCTRL  ______              ______     &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  ______
+  ______     &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL  ______              ______     &kp RCTRL  &kp RALT   &kp RGUI   &kp RSHFT  ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };l1r1_layer { bindings = <
+
+  ______     ______     &kp F5     &kp F4     &kp F3     &kp F11             ______     ______     ______     ______     ______     ______
+  ______     ______     &kp F2     &kp F1     &kp F10    &kp F9              ______     &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  ______
+  ______     ______     &kp F8     &kp F7     &kp F6     &kp F12             ______     &kp RCTRL  &kp RALT   &kp RGUI   &kp RSHFT  ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };l1l2_layer { bindings = <
+
+  btlder     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     btlder
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };r1r2_layer { bindings = <
+
+  btlder     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     btlder
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     ______     ______
+  ______     ______     ______     ______     ______     ______              ______     ______     ______     ______     &kp FSLH   ______
+                                   &mo L2     &mo L1     ______              ______     &mo R1     &mo R2                                     >; };l1r1r2_layer { bindings = <
+
+  xbt_n      rgb_tg     pwr_tg     ______     ______     ______              rgb_sv     pwr_on     rgb_bn     rgb_sn     rgb_hn     rgb_en
+  xbt_p      df_b0      df_b1      ______     ______     ______              pwr_sv     pwr_off    rgb_bp     rgb_sp     rgb_hp     rgb_ep
+  out_b      xbt_s0     xbt_s1     xbt_s2     xbt_s3     xbt_s4              ______     ______     ______     ______     ______     ______
+                                   &mo L2     &mo L1     xbt_clr             out_u      &mo R1     &mo R2                                     >; };};};
