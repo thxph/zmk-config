@@ -55,6 +55,19 @@
 #define ZLGUI &bht LGUI Z
 #define SLHRGUI &bht RGUI FSLH
 
+&led_strip {
+    power-domain = <&pd_ext_power>;
+};
+
+/ {
+    dev_pm_policy_1 {
+        compatible = "zmk,dev-pm-policy";
+        label = "DEV_PM_POLICY_1";
+        device = <&pd_ext_power>;
+        auto-off-on-idle;
+    };
+};
+
 &mt {
     tapping-term-ms = <169>;
 };
