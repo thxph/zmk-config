@@ -1,0 +1,16 @@
+#include <dt-bindings/zmk/ext_power.h>
+
+#define pwr_tg  &ext_power EP_TOG
+#define pwr_on  &ext_power EP_ON
+#define pwr_off &ext_power EP_OFF
+#define pwr_sv  &ext_power EP_SAV
+
+/ {
+    dev_pm_policy_1 {
+        compatible = "zmk,dev-pm-policy";
+        label = "DEV_PM_POLICY_1";
+        device = <&pd_ext_power>;
+        auto-off-on-idle;
+    };
+};
+

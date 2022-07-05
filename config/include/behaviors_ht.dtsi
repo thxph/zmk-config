@@ -1,0 +1,20 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+&mt {
+    tapping-term-ms = <169>;
+};
+
+/ {
+    behaviors {
+        bht: balanced_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "bht";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <300>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};

@@ -1,0 +1,5 @@
+
+&led_strip {
+    power-domain = <&pd_ext_power>;
+};
+

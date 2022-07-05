@@ -1,0 +1,37 @@
+
+#define df_b0 &to 0
+#define df_b1 &to 1
+
+#define DEFAULT 0
+#define B1      1
+#define L1      2
+#define R1      3
+#define L2      4
+#define R2      5
+#define L1R1    6
+#define L1L2    7
+#define R1R2    8
+#define L1R1R2  9
+
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        l1r1 {
+            if-layers = <2 3>;
+            then-layer = <6>;
+        };
+        l1l2 {
+            if-layers = <2 4>;
+            then-layer = <7>;
+        };
+        r1r2 {
+            if-layers = <3 5>;
+            then-layer = <8>;
+        };
+        l1r1r2 {
+            if-layers = <2 3 5>;
+            then-layer = <9>;
+        };
+    };
+};
