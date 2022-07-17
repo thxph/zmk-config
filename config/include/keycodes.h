@@ -19,7 +19,7 @@
 
 #define RGUI_H  &hm_retro_slow_r RGUI  H
 #define RSFT_J  &hm_fast_r       RSHFT J
-#define RCTL_K  &hm_r            RCTRL K
+#define RCTL_K  &hm_fast_r       RCTRL K
 #define RALT_L  &hm_r            RALT  L
 #define L1_SEM  &hl_fast_r       L1    SEMI
 #define R1_BSPC &hl_fast_r       R1    BSPC
