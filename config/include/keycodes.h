@@ -32,18 +32,18 @@
 #define LG__  &hm_retro_slow_l LGUI
 #define LS__  &hm_l            LSHFT
 #define LC__  &hm_fast_l       LCTRL
-#define LA__  &hm_l            LALT 
-#define LL1__  &hl_fast_l       L1   
-#define LR1__  &hl_fast_l       R1   
+#define LA__  &hm_l            LALT
+#define LL1__  &hl_fast_l       L1
+#define LR1__  &hl_fast_l       R1
 
-#define RG__  &hm_retro_slow_r RGUI 
+#define RG__  &hm_retro_slow_r RGUI
 #define RS__  &hm_r            RSHFT
 #define RC__  &hm_fast_r       RCTRL
-#define RA__  &hm_r            RALT 
-#define RL1__  &hl_fast_r       L1   
-#define RR1__  &hl_fast_r       R1   
+#define RA__  &hm_r            RALT
+#define RL1__  &hl_fast_r       L1
+#define RR1__  &hl_fast_r       R1
 
-#define LC_ESC &mt LCTRL ESCAPE
-#define RC_BSPC &mt RCTRL BSPC
+#define LC_ESC  &mt  LCTRL ESCAPE
+#define RC_BSPC &htp RCTRL BSPC
 
 #define L1_SPC  &ltp L1 SPACE

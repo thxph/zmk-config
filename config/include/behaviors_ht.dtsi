@@ -8,7 +8,6 @@
 &mt {
     tapping-term-ms = <180>;
     quick-tap-ms = <TAPPING_TERM_MS>;
-    retro-tap;
 };
 
 / {
@@ -20,6 +19,16 @@
             tapping-term-ms = <TAPPING_TERM_MS>;
             quick-tap-ms = <TAPPING_TERM_MS>;
             flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        htp: hold_tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "htp";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
