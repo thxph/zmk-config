@@ -10,6 +10,8 @@
 
 #define btlder &bootloader
 
+#define LCA     &kp              LC(LALT)
+
 #define LGUI_G  &hm_retro_slow_l LGUI  G
 #define LSFT_F  &hm_fast_l       LSHFT F
 #define LCTL_D  &hm_fast_l       LCTRL D
